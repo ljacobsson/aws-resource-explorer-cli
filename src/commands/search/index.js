@@ -43,7 +43,6 @@ program
       });
     } while (source.id === START_TYPING);    
     const url = `https://${AWS.config.region}.console.aws.amazon.com/go/view?arn=${source.id}&amp;source=aws-resource-explorer-cli`;
-    console.log(`Opening ${url}`);
     open(url);
   });
 
