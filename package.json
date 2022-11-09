@@ -1,0 +1,39 @@
+{
+  "name": "aws-resource-explorer-cli",
+  "version": "1.0.0",
+  "description": "Searches AWS resources and launches them in the AWS console in your browser",
+  "main": "index.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ljacobsson/aws-resource-explorer-cli.git"
+  },
+  "keywords": [
+    "aws",
+    "productivity"
+  ],
+  "author": "Lars Jacobsson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ljacobsson/aws-resource-explorer-cli/issues"
+  },
+  "homepage": "https://github.com/ljacobsson/aws-resource-explorer-cli#readme",
+  "dependencies": {
+    "@aws-sdk/util-arn-parser": "^3.201.0",
+    "@mhlabs/aws-sdk-sso": "^0.0.16",
+    "aws-sdk": "^2.1250.0",
+    "commander": "^9.4.1",
+    "inquirer": "^7.0.4",
+    "inquirer-autocomplete-prompt": "^1.3.0",
+    "link2aws": "^1.0.11",
+    "open": "^8.4.0"
+  },
+  "bin": {
+    "resource-explorer": "index.js",
+    "resexp": "index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
