@@ -3,7 +3,6 @@ const authHelper = require("../shared/auth-helper");
 const inquirer = require("inquirer");
 const arnParser = require("@aws-sdk/util-arn-parser");
 const open = require("open");
-const link2aws = require('link2aws');
 inquirer.registerPrompt(
   "autocomplete",
   require("inquirer-autocomplete-prompt")
@@ -17,7 +16,7 @@ program
   .description("Invokes the resource explorer search API with a search as you type interface")
   .action(async (cmd) => {
     authHelper.initAuth(cmd);
-    const resourceExplorer = new AWS.ResourceExplorer2();
+    const resourceExplorer = new AWS.ResourceExplorer2();    
     let source;
     do {
       source = await inquirer.prompt({
@@ -42,8 +41,9 @@ program
           }
         }
       });
-    } while (source.id === START_TYPING);
-
-    open(new link2aws.ARN(source.id).consoleLink);
+    } while (source.id === START_TYPING);    
+    const url = `https://${AWS.config.region}.console.aws.amazon.com/go/view?arn=${source.id}&amp;source=unified-search`
+    console.log(`Opening ${url}`);
+    open(url);
   });
 
