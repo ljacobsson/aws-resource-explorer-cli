@@ -1,6 +1,6 @@
 {
   "name": "aws-resource-explorer-cli",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Searches AWS resources and launches them in the AWS console in your browser",
   "main": "index.js",
   "scripts": {
