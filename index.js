@@ -4,6 +4,7 @@ const program = require("commander");
 const package = require("./package.json");
 require("@mhlabs/aws-sdk-sso");
 require("./src/commands/search");
+require("./src/commands/stack");
 
 program.version(package.version, "-v, --vers", "output the current version");
 
