@@ -10,6 +10,10 @@ Note that this only works with supported resources. Find out which are indexed i
 npm i -g aws-resource-explorer-cli
 ```
 
+## Query syntax
+Please study the [AWS Resource Explorer](https://docs.aws.amazon.com/resource-explorer/latest/userguide/using-search-query-syntax.html) documentation to get the most out of your searches.
+
+## Demo
 ![Demo](./images/demo.gif)
 
 ## Commands
