@@ -20,3 +20,5 @@ Please study the [AWS Resource Explorer](https://docs.aws.amazon.com/resource-ex
 
 * `resource-explorer search <query>` - Free text search of all your supported resources
 * `resource-explorer stack-resources <query>` - Browse the resources in a CloudFormation stack and navigate to their console page
+
+Note that you can also access the command via its alias `resexp` where `resource-explorer stack-resources --stack-name my-stack` can be abbreviated as `resexp sr -s my-stack`
